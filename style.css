@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&family=Source+Code+Pro:ital,wght@0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,400&family=Titillium+Web:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.banner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px;
+    background: white;
+    transition: 0.5s;
+}
+
+.banner.night {
+    background-color: grey;
+}
+
+
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: black;
+    font-size: 2em;
+    font-weight: lighter;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header .logo span {
+    color: black;
+}
+
+header .logo span:hover {
+    color: lime;
+}
+
+header ul {
+    display: flex;
+    gap: 40px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: black;
+    transition: 0.5s;
+}
+
+.content {
+    position: relative;
+    max-width: 700px;
+    z-index: 10;
+}
+
+.content h3 {
+    font-size: 2em;
+    color: black;
+    font-weight: 200;
+    transition: 0.5s;
+}
+
+.content h2 {
+    font-size: 4.5em;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.content h2 span {
+    color: black;
+}
+
+.content h2 span:hover {
+    color: lime
+}
+
+.content p {
+    font-size: 1.7em;
+    color: black;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.content button.chat {
+    position: relative;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px 35px;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    border-radius: 4px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.content button.chat a{
+    color: white;
+    text-decoration: none;
+}
+.content button.chat ion-icon {
+    position: relative;
+    top: 3px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.sci {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    text-decoration: none;
+    font-size: 1.75em;
+    color: black;
+}
+
+.sci li a:hover {
+    color: lime;
+}
+
+.dayNight {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.05s;
+    font-size: 2em;
+}
+
+.banner.night .banner.dayNight {
+    background-color: grey;
+    color: white;
+}
+
+.dayNight ion-icon:nth-child(2),
+.banner.night .dayNight ion-icon:nth-child(1) {
+    display: none;
+}
+
+.banner.night .dayNight ion-icon:nth-child(2) {
+    display: block;
+}
+
+.fondo {
+    position: absolute;
+    right: 0;
+    max-width: 520px;
+    animation: animateFondo 10s ease-in-out infinite;
+}
+
+@keyframes animateFondo {
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+}
+.yamila{
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    height: 520px;
+    animation: animateYamila 8s ease-in-out infinite;
+    
+}
+
+@keyframes animateYamila {
+    0%, 100%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(-50px);
+    }
+}
+
+
+.proyect a {
+    color: lime;
+    text-decoration: none;
+ }
+
+ .proyect a:hover{
+    color: black;
+ }
+
